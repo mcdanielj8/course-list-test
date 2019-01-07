@@ -1,0 +1,53 @@
+.card-group {
+    padding: 0 10px;
+
+    h2 {
+        margin: 30px 0 10px;
+    }
+}
+
+.mat-card {
+    margin: 10px 0;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    .subject {
+        width: 5rem;
+    }
+    .title {
+        width: 30rem;
+    }
+    .instructor {
+        width: 5rem;
+    }
+    .instructorName {
+        width: 10rem;
+    }
+    .time {
+        width: 10rem;
+    }
+}
+
+
+@media screen and (max-width: 635px) {
+    .mat-card {
+        .subject,
+        .title,
+        .instructor,
+        .instructorName,
+        .time {
+            width: auto;
+        }
+        .title {
+            width: 15rem;
+        }
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .mat-card {
+        .title {
+            width: 10rem;
+        }
+    }
+}

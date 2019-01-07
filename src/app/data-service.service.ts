@@ -6,6 +6,6 @@ import { HttpClient } from '@angular/common/http';
 export class DataService {
   constructor(private http: HttpClient){}
   getJsonData(): Promise<any[]>{
-    return this.http.get<any[]>('http://localhost:4200/assets/data.json').toPromise();
+    return this.http.get<any[]>('https://shielded-dusk-49810.herokuapp.com/assets/data.json').toPromise();
   }
 }

@@ -9,10 +9,10 @@ import * as moment from 'moment';
   providers: [DataService],
 })
 export class AppComponent {
-  private data: any[];
+  public data: any[];
 
   constructor(
-    private dataService: DataService,
+    public dataService: DataService,
     ) {}
 
   ngOnInit() {
